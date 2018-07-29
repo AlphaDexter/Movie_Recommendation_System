@@ -1,0 +1,31 @@
+{% extends 'base_file.html' %}
+{% block title %}Movie Bot{% endblock %}
+
+
+{% block body %}
+    <style>
+        .container {
+            margin-top: 40vh;
+            text-align: center;
+            {#vertical-align: middle;#}
+            white-space: nowrap;
+            width: 750px;
+        }
+    </style>
+
+    <!-- Search Box -->
+    <div class="container">
+        <form action="#" role="search" method="get">
+            <div class="input-group">
+                <input type="text" id="search" class="form-control" placeholder="Enter preferred genre..." name="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-md" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- end search box -->
+
+{% endblock %}
